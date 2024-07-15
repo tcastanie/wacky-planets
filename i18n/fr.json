@@ -1,0 +1,16 @@
+{
+  "hello": "Salut à tous !",
+  "exoplanets": "Exoplanètes",
+  "planets": "Planètes",
+  "about": "À propos",
+  "exo1title": "Découverte et diversité des exoplanètes",
+  "exo2title": "Méthodes de détection des exoplanètes",
+  "exo3title": "Zones habitables et recherche de vie",
+  "exo4title": "Avancées technologiques et étude des atmosphères",
+  "exo1": "Les exoplanètes, également connues sous le nom de planètes extrasolaires, sont des planètes qui orbitent autour d'étoiles situées en dehors de notre système solaire. Depuis la première découverte confirmée en 1992, les scientifiques ont identifié des milliers d'exoplanètes, révélant une diversité stupéfiante dans leurs tailles, compositions et environnements orbitaux. Certaines de ces planètes ressemblent à des géantes gazeuses comme Jupiter, tandis que d'autres sont plus rocheuses et similaires à la Terre. Cette variété offre des perspectives fascinantes pour la compréhension de la formation des systèmes planétaires et la recherche de vie extraterrestre.",
+  "exo2": "La détection et l'étude des exoplanètes représentent un défi majeur en raison de leur grande distance et de leur proximité relative avec leurs étoiles hôtes, qui tendent à éclipser la lumière faible des planètes. Les astronomes utilisent plusieurs méthodes pour découvrir et étudier ces mondes lointains, notamment la méthode des transits, où ils observent les diminutions de luminosité d'une étoile quand une planète passe devant elle, et la méthode de la vitesse radiale, qui mesure les variations de vitesse d'une étoile dues à l'attraction gravitationnelle d'une planète.",
+  "exo3": "L'étude des exoplanètes a également révélé l'existence de zones habitables, des régions autour des étoiles où les conditions pourraient être justes pour permettre l'existence d'eau liquide à la surface d'une planète, un élément crucial pour la vie telle que nous la connaissons. La découverte de planètes dans ces zones habitables suscite beaucoup d'intérêt, car elles sont considérées comme les candidates les plus prometteuses pour la recherche de signes de vie.",
+  "exo4": "En outre, les avancées technologiques, telles que le télescope spatial James Webb, promettent de révolutionner notre compréhension des exoplanètes. Ces instruments de nouvelle génération permettront aux scientifiques d'étudier les atmosphères des exoplanètes en détail, recherchant des indicateurs de vie tels que l'eau, l'oxygène et le méthane. À mesure que notre capacité à observer ces mondes lointains s'améliore, nous nous rapprochons de répondre à l'une des questions les plus profondes de l'humanité : sommes-nous seuls dans l'univers ?",
+  "quote1": "Si jamais vous vous perdez dans l'espace, levez les yeux vers les étoiles. Elles ne vous aideront pas, mais c'est joli à regarder",
+  "quote2": "Ne sous-estimez jamais le pouvoir du côté obscur... surtout en matière de connexion Wi-Fi interstellaire"
+}

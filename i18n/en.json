@@ -1,0 +1,16 @@
+{
+  "hello": "Hello There!",
+  "exoplanets": "Exoplanets",
+  "planets": "Planets",
+  "about": "About",
+  "exo1title": "Discovery and Diversity of Exoplanets",
+  "exo2title": "Methods of Detecting Exoplanets",
+  "exo3title": "Habitable Zones and the Search for Life",
+  "exo4title": "Technological Advances and Atmospheric Studies",
+  "exo1": "Exoplanets, also known as extrasolar planets, are planets that orbit stars outside of our solar system. Since the first confirmed discovery in 1992, scientists have identified thousands of exoplanets, revealing an astonishing diversity in their sizes, compositions, and orbital environments. Some of these planets resemble gas giants like Jupiter, while others are more rocky and similar to Earth. This variety offers fascinating insights into the formation of planetary systems and the search for extraterrestrial life.",
+  "exo2": "Detecting and studying exoplanets pose a significant challenge due to their vast distances and their relative proximity to their host stars, which tend to overshadow the planets' faint light. Astronomers use several methods to discover and study these distant worlds, including the transit method, where they observe decreases in a star's brightness when a planet passes in front of it, and the radial velocity method, which measures changes in a star's velocity due to the gravitational pull of a planet.",
+  "exo3": "The study of exoplanets has also revealed the existence of habitable zones, regions around stars where conditions might be just right to allow the presence of liquid water on a planet's surface, a crucial element for life as we know it. The discovery of planets within these habitable zones generates a lot of interest, as they are considered the most promising candidates for the search for signs of life.",
+  "exo4": "Furthermore, technological advancements, such as the James Webb Space Telescope, promise to revolutionize our understanding of exoplanets. These next-generation instruments will allow scientists to study the atmospheres of exoplanets in detail, searching for life indicators such as water, oxygen, and methane. As our ability to observe these distant worlds improves, we move closer to answering one of humanity's most profound questions: Are we alone in the universe?",
+  "quote1": "If you ever get lost in space, look up at the stars. They won't help you, but they're nice to look at",
+  "quote2": "Never underestimate the power of the dark side... especially when it comes to interstellar Wi-Fi connections"
+}
