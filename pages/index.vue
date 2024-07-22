@@ -14,7 +14,7 @@ const backgroundStyles = computed(() => {
     class="relative h-full bg-no-repeat bg-center bg-cover flex items-end justify-center p-16"
     :style="backgroundStyles"
   >
-    <div class="absolute mx-auto top-46% left-50% text-right flex flex-col">
+    <div class="absolute mx-auto top-46% left-50% text-right flex flex-col text-zinc-900">
       <span class="text-2xl">Wacky</span>
       <span class="text-3xl">Planets</span>
     </div>

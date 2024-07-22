@@ -3,6 +3,7 @@
   "exoplanets": "Exoplanets",
   "planets": "Planets",
   "about": "About",
+  "explorePlanets": "Explore the planets",
   "exo1title": "Discovery and Diversity of Exoplanets",
   "exo2title": "Methods of Detecting Exoplanets",
   "exo3title": "Habitable Zones and the Search for Life",
@@ -12,5 +13,7 @@
   "exo3": "The study of exoplanets has also revealed the existence of habitable zones, regions around stars where conditions might be just right to allow the presence of liquid water on a planet's surface, a crucial element for life as we know it. The discovery of planets within these habitable zones generates a lot of interest, as they are considered the most promising candidates for the search for signs of life.",
   "exo4": "Furthermore, technological advancements, such as the James Webb Space Telescope, promise to revolutionize our understanding of exoplanets. These next-generation instruments will allow scientists to study the atmospheres of exoplanets in detail, searching for life indicators such as water, oxygen, and methane. As our ability to observe these distant worlds improves, we move closer to answering one of humanity's most profound questions: Are we alone in the universe?",
   "quote1": "If you ever get lost in space, look up at the stars. They won't help you, but they're nice to look at",
-  "quote2": "Never underestimate the power of the dark side... especially when it comes to interstellar Wi-Fi connections"
+  "quote2": "Never underestimate the power of the dark side... especially when it comes to interstellar Wi-Fi connections",
+  "planetDesc1": "{slug} is a fascinating exoplanet located about 50 light-years from Earth in the constellation Lyra. This planet, slightly larger than Neptune, orbits around a red dwarf star. This exotic world is famous for its extravagant landscapes and unique atmospheric phenomena. Its surface is dotted with vast seas of liquid methane, which sparkle under the influence of winds laden with luminescent particles. These seas are interspersed with crystalline mountain ranges, whose peaks reflect the reddish light of the star, creating an almost fairy-tale ambiance. The polar auroras, more intense and colorful than those on Earth, dance in the night sky, illuminating the atmosphere with a myriad of vivid colors.",
+  "planetDesc2": "The fauna and flora of {slug} are equally impressive. The vegetation, adapted to extreme conditions, consists of bioluminescent plants with exotic shapes, which glow in the dark and change color depending on the temperature and humidity. The forests of giant mushrooms, sometimes reaching several tens of meters high, house a variety of strange and colorful creatures. Some semi-translucent organisms, glide gracefully over the ground, leaving trails of phosphorescent light behind them. The birds of {slug}, with iridescent feathers and melodious songs, add an enchanting sound dimension to this wonderful world, where every element seems to participate in a perpetual cosmic symphony."
 }

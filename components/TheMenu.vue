@@ -1,5 +1,7 @@
 <script lang="ts" setup>
-const planets = useState<string[]>('statePlanets')
+const { toggleMenu } = useMenu()
+
+const planets = usePlanets()
 const links = [
   { to: '/home', localeKey: 'exoplanets' },
   {
@@ -12,6 +14,18 @@ const links = [
   },
   { to: '/about', localeKey: 'about' },
 ]
+
+const toggleSub = (to: string) => {
+  if (openSubs.value.includes(to)) {
+    openSubs.value = openSubs.value.filter(sub => sub !== to)
+  }
+  else if (openSubs.value.some(sub => sub.includes(to))) {
+    openSubs.value = openSubs.value.filter(sub => !sub.includes(to))
+  }
+  else {
+    openSubs.value = [...openSubs.value, to]
+  }
+}
 const route = useRoute()
 const openSubs = ref<string[]>([route.path])
 </script>
@@ -24,17 +38,18 @@ const openSubs = ref<string[]>([route.path])
         :key="to"
         class="flex"
       >
-        <div class="w-12 h-8 grid place-items-center text-zinc-700">
+        <div class="w-12 h-8 grid place-items-center text-zinc-600">
           <span
             v-if="children"
             class="i-mingcute-right-line w-4 h-4 shrink-0 cursor-pointer transition-transform"
-            :class="{ 'rotate-90': openSubs.includes(to) }"
-            @click="openSubs.includes(to) ? openSubs.splice(openSubs.indexOf(to), 1) : openSubs.push(to)"
+            :class="{ 'rotate-90': openSubs.includes(to) || openSubs.some(sub => sub.includes(to)) }"
+            @click="toggleSub(to)"
           />
         </div>
         <NuxtLink
           v-if="!children"
           :to="to"
+          @click="toggleMenu()"
         >
           {{ $t(localeKey) }}
         </NuxtLink>
@@ -42,21 +57,24 @@ const openSubs = ref<string[]>([route.path])
           v-else-if="children"
           v-auto-animate
         >
-          <div
-            class="cursor-pointer"
-            @click="openSubs.includes(to) ? openSubs.splice(openSubs.indexOf(to), 1) : openSubs.push(to)"
+          <NuxtLink
+            :to="to"
+            @click="toggleMenu()"
           >
             {{ $t(localeKey) }}
-          </div>
+          </NuxtLink>
           <ul
-            v-if="openSubs.includes(to)"
+            v-if="openSubs.includes(to) || openSubs.some(sub => sub.includes(to))"
             class="grid gap-4 text-lg font-medium mt-4 pl-8"
           >
             <li
               v-for="{ to: childrenTo, text } of children"
               :key="text"
             >
-              <NuxtLink :to="childrenTo">
+              <NuxtLink
+                :to="childrenTo"
+                @click="toggleMenu()"
+              >
                 {{ text }}
               </NuxtLink>
             </li>

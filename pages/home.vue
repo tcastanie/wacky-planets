@@ -73,8 +73,8 @@
     </div>
     <div class="pt-8 px-8 my-8">
       <UiSubtitle class="text-center">
-        <NuxtLink to="/">
-          Explore the planets
+        <NuxtLink to="/planets">
+          {{ $t('explorePlanets') }}
         </NuxtLink>
       </UiSubtitle>
     </div>

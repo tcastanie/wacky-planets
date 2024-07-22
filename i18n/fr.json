@@ -3,6 +3,7 @@
   "exoplanets": "Exoplanètes",
   "planets": "Planètes",
   "about": "À propos",
+  "explorePlanets": "Explorer les planètes",
   "exo1title": "Découverte et diversité des exoplanètes",
   "exo2title": "Méthodes de détection des exoplanètes",
   "exo3title": "Zones habitables et recherche de vie",
@@ -12,5 +13,7 @@
   "exo3": "L'étude des exoplanètes a également révélé l'existence de zones habitables, des régions autour des étoiles où les conditions pourraient être justes pour permettre l'existence d'eau liquide à la surface d'une planète, un élément crucial pour la vie telle que nous la connaissons. La découverte de planètes dans ces zones habitables suscite beaucoup d'intérêt, car elles sont considérées comme les candidates les plus prometteuses pour la recherche de signes de vie.",
   "exo4": "En outre, les avancées technologiques, telles que le télescope spatial James Webb, promettent de révolutionner notre compréhension des exoplanètes. Ces instruments de nouvelle génération permettront aux scientifiques d'étudier les atmosphères des exoplanètes en détail, recherchant des indicateurs de vie tels que l'eau, l'oxygène et le méthane. À mesure que notre capacité à observer ces mondes lointains s'améliore, nous nous rapprochons de répondre à l'une des questions les plus profondes de l'humanité : sommes-nous seuls dans l'univers ?",
   "quote1": "Si jamais vous vous perdez dans l'espace, levez les yeux vers les étoiles. Elles ne vous aideront pas, mais c'est joli à regarder",
-  "quote2": "Ne sous-estimez jamais le pouvoir du côté obscur... surtout en matière de connexion Wi-Fi interstellaire"
+  "quote2": "Ne sous-estimez jamais le pouvoir du côté obscur... surtout en matière de connexion Wi-Fi interstellaire",
+  "planetDesc1": "{slug} est une exoplanète fascinante située à environ 50 années-lumière de la Terre, dans la constellation de la Lyre. Cette planète, légèrement plus grande que Neptune, orbite autour d'une étoile naine rouge. Ce monde exotique est célèbre pour ses paysages extravagants et ses phénomènes atmosphériques uniques. Sa surface est parsemée de vastes mers de méthane liquide, qui scintillent sous l'effet des vents chargés de particules luminescentes. Ces mers sont entrecoupées de chaînes de montagnes cristallines, dont les sommets reflètent la lumière rougeâtre de l'étoile, créant une ambiance quasi féerique. Les aurores polaires, plus intenses et colorées que celles de la Terre, dansent dans le ciel nocturne, illuminant l'atmosphère d'une myriade de couleurs vives.",
+  "planetDesc2": "La faune et la flore de {slug} sont tout aussi impressionnantes. La végétation, adaptée aux conditions extrêmes, est composée de plantes bioluminescentes aux formes exotiques, qui brillent dans l'obscurité et changent de couleur en fonction de la température et de l'humidité. Les forêts de champignons géants, atteignant parfois plusieurs dizaines de mètres de haut, abritent une variété de créatures étranges et colorées. Parmi elles, des organismes semi-translucides, glissent gracieusement sur le sol, laissant derrière eux des traînées de lumière phosphorescente. Les oiseaux de {slug}, aux plumes iridescentes et aux chants mélodieux, ajoutent une dimension sonore enchanteresse à ce monde merveilleux, où chaque élément semble participer à une symphonie cosmique perpétuelle."
 }
