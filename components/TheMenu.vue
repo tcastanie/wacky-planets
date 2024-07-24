@@ -8,7 +8,7 @@ const links = [
     to: '/planets',
     localeKey: 'planets',
     children: planets.value.map(planet => ({
-      to: `/planets/${planet.toLocaleLowerCase()}`,
+      to: `/planets/${planet}`,
       text: planet,
     })),
   },
@@ -55,7 +55,6 @@ const openSubs = ref<string[]>([route.path])
         </NuxtLink>
         <div
           v-else-if="children"
-          v-auto-animate
         >
           <NuxtLink
             :to="to"
@@ -73,6 +72,7 @@ const openSubs = ref<string[]>([route.path])
             >
               <NuxtLink
                 :to="childrenTo"
+                class="capitalize"
                 @click="toggleMenu()"
               >
                 {{ text }}

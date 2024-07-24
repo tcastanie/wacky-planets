@@ -4,14 +4,8 @@ const { menu, toggleMenu } = useMenu()
 </script>
 
 <template>
-  <header
-    v-auto-animate
-    class="sticky top-0 z-50 bg-zinc-950"
-  >
-    <div
-      v-auto-animate
-      class="header-height flex items-center justify-between gap-4 px-4 border-b border-zinc-700"
-    >
+  <header class="sticky top-0 z-50 bg-zinc-950">
+    <div class="header-height flex items-center justify-between gap-4 px-4 border-b border-zinc-700">
       <button class="flex bg-zinc-100 text-zinc-900 rounded-full p-2">
         <span class="i-mingcute-search-2-line w-6 h-6 shrink-0" />
       </button>
@@ -37,12 +31,14 @@ const { menu, toggleMenu } = useMenu()
         />
       </button>
     </div>
-    <div
-      v-if="menu"
-      class="panel-top absolute w-full px-4 bg-zinc-950"
-    >
-      <TheMenu />
-    </div>
+    <Transition>
+      <div
+        v-show="menu"
+        class="panel-top absolute w-full px-4 bg-zinc-950"
+      >
+        <TheMenu />
+      </div>
+    </Transition>
   </header>
 </template>
 
@@ -53,5 +49,20 @@ const { menu, toggleMenu } = useMenu()
 .panel-top {
   top: calc(v-bind(headerHeight) - 1px);
   height: calc(100vh - v-bind(headerHeight) - 15px);
+}
+
+.v-enter-active,
+.v-leave-active {
+  transition: all 0.4s ease-in;
+}
+
+.v-enter-from,
+.v-leave-to {
+  left: 100%;
+}
+
+.v-enter-to,
+.v-leave-from {
+  left: 0;
 }
 </style>
