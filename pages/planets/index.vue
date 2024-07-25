@@ -20,7 +20,7 @@ const planets = usePlanets()
           height="128"
           :img-attrs="{ class: 'rounded-xl' }"
         />
-        <div class="text-xl text-balance">
+        <div class="text-xl text-balance capitalize">
           {{ planet }}
         </div>
       </NuxtLink>

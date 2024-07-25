@@ -2,18 +2,20 @@
   <div class="px-8 mt-8 mb-16 grid gap-8">
     <p>ChatGPT is the new Lorem Ipsum</p>
     <ul class="list-disc list-inside">
-      <p>Images from Unsplash:</p>
+      <p>Some images are from Unsplash:</p>
       <li>
-        <a
-          href="https://unsplash.com/fr/@hubblespacetelescope"
+        <NuxtLink
+          to="https://unsplash.com/fr/@hubblespacetelescope"
+          target="_blank"
           class="underline underline-offset-2"
-        >@hubblespacetelescope</a>
+        >@hubblespacetelescope</NuxtLink>
       </li>
       <li>
-        <a
-          href="https://unsplash.com/fr/@mnelson"
+        <NuxtLink
+          to="https://unsplash.com/fr/@mnelson"
+          target="_blank"
           class="underline underline-offset-2"
-        >@mnelson</a>
+        >@mnelson</NuxtLink>
       </li>
     </ul>
   </div>
