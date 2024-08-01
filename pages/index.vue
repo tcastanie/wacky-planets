@@ -11,14 +11,14 @@ const backgroundStyles = computed(() => {
 
 <template>
   <div
-    class="relative h-full bg-no-repeat bg-center bg-cover flex items-end justify-center p-16"
+    class="relative h-full flex items-end justify-center bg-cover bg-center bg-no-repeat p-16"
     :style="backgroundStyles"
   >
-    <div class="absolute mx-auto top-46% left-50% text-right flex flex-col text-zinc-900">
+    <div class="absolute left-50% top-46% mx-auto flex flex-col text-right text-zinc-900">
       <span class="text-2xl">Wacky</span>
       <span class="text-3xl">Planets</span>
     </div>
-    <div class="flex gap-x-8 flex-wrap text-white">
+    <div class="flex flex-wrap gap-x-8 text-white">
       <NuxtLink
         to="/home"
         class="border border-white rounded p-2 px-4"

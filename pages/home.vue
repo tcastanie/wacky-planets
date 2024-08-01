@@ -7,7 +7,7 @@
       width="576"
       height="432"
     />
-    <div class="px-8 my-8">
+    <div class="my-8 px-8">
       <UiTitle>{{ $t('exo1title') }}</UiTitle>
       <p>{{ $t('exo1') }}</p>
     </div>
@@ -20,7 +20,7 @@
     />
     <UiDiagonalBand :btt="false">
       <blockquote>
-        <p class="italic text-xl text-balance mb-4">
+        <p class="mb-4 text-balance text-xl italic">
           {{ $t('quote1') }}
         </p>
         <footer class="text-sm">
@@ -28,7 +28,7 @@
         </footer>
       </blockquote>
     </UiDiagonalBand>
-    <div class="px-8 my-8">
+    <div class="my-8 px-8">
       <UiTitle>{{ $t('exo2title') }}</UiTitle>
       <p>{{ $t('exo2') }}</p>
     </div>
@@ -41,7 +41,7 @@
     />
     <UiDiagonalBand>
       <blockquote>
-        <p class="italic text-xl text-balance mb-4">
+        <p class="mb-4 text-balance text-xl italic">
           {{ $t('quote2') }}
         </p>
         <footer class="text-sm">
@@ -56,7 +56,7 @@
       width="576"
       height="348"
     />
-    <div class="px-8 my-8">
+    <div class="my-8 px-8">
       <UiTitle>{{ $t('exo3title') }}</UiTitle>
       <p>{{ $t('exo3') }}</p>
     </div>
@@ -67,11 +67,11 @@
       width="576"
       height="487"
     />
-    <div class="px-8 my-8">
+    <div class="my-8 px-8">
       <UiTitle>{{ $t('exo4title') }}</UiTitle>
       <p>{{ $t('exo4') }}</p>
     </div>
-    <div class="pt-8 px-8 my-8">
+    <div class="my-8 px-8 pt-8">
       <UiSubtitle class="text-center">
         <NuxtLink to="/planets">
           {{ $t('explorePlanets') }}

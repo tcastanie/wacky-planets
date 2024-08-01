@@ -38,10 +38,10 @@ const openSubs = ref<string[]>([route.path])
         :key="to"
         class="flex"
       >
-        <div class="w-12 h-8 grid place-items-center text-zinc-600">
+        <div class="grid h-8 w-12 place-items-center text-zinc-600">
           <span
             v-if="children"
-            class="i-mingcute-right-line w-4 h-4 shrink-0 cursor-pointer transition-transform"
+            class="i-mingcute-right-line h-4 w-4 shrink-0 cursor-pointer transition-transform"
             :class="{ 'rotate-90': openSubs.includes(to) || openSubs.some(sub => sub.includes(to)) }"
             @click="toggleSub(to)"
           />
@@ -64,7 +64,7 @@ const openSubs = ref<string[]>([route.path])
           </NuxtLink>
           <ul
             v-if="openSubs.includes(to) || openSubs.some(sub => sub.includes(to))"
-            class="grid gap-4 text-lg font-medium mt-4 pl-8"
+            class="grid mt-4 gap-4 pl-8 text-lg font-medium"
           >
             <li
               v-for="{ to: childrenTo, text } of children"

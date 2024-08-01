@@ -5,23 +5,23 @@ const { menu, toggleMenu } = useMenu()
 
 <template>
   <header class="sticky top-0 z-50 bg-zinc-950">
-    <div class="header-height flex items-center justify-between gap-4 px-4 border-b border-zinc-700">
+    <div class="header-height flex items-center justify-between gap-4 border-b border-zinc-700 px-4">
       <SearchButton />
       <NuxtLink
         v-if="menu"
         to="/"
-        class="flex gap-2 py-1 px-2 text-zinc-100 border border-zinc-600 border-dashed rounded-xl hover:border-dotted hover:border-2"
+        class="flex gap-2 border border-zinc-600 rounded-xl border-dashed px-2 py-1 text-zinc-100 hover:border-2 hover:border-dotted"
         @click="toggleMenu()"
       >
-        <span class="i-mingcute-rocket-line w-6 h-6 shrink-0" />
-        <span class="i-mingcute-planet-line w-6 h-6 shrink-0" />
+        <span class="i-mingcute-rocket-line h-6 w-6 shrink-0" />
+        <span class="i-mingcute-planet-line h-6 w-6 shrink-0" />
       </NuxtLink>
       <button
         class="flex rounded-lg p-1 text-zinc-100"
         @click="toggleMenu()"
       >
         <span
-          class="w-6 h-6 shrink-0"
+          class="h-6 w-6 shrink-0"
           :class="{
             'i-mingcute-menu-line': !menu,
             'i-mingcute-close-line': menu,
@@ -32,7 +32,7 @@ const { menu, toggleMenu } = useMenu()
     <Transition>
       <div
         v-show="menu"
-        class="panel-top absolute w-full px-4 bg-zinc-950"
+        class="panel-top absolute w-full bg-zinc-950 px-4"
       >
         <TheMenu />
       </div>

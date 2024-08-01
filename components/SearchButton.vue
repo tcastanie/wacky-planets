@@ -7,7 +7,7 @@ const searchResults = computed(() => {
 })
 
 // Focus the search input when the search is toggled
-const searchinput = ref<HTMLInputElement | null>(null)
+const searchinput = ref < HTMLInputElement | null > (null)
 watchEffect(() => {
   if (search) searchinput.value?.focus()
 })
@@ -15,16 +15,16 @@ watchEffect(() => {
 
 <template>
   <button
-    class="flex bg-zinc-100 text-zinc-900 rounded-full p-2"
+    class="flex rounded-full bg-zinc-100 p-2 text-zinc-900"
     @click="toggleSearch()"
   >
-    <span class="i-mingcute-search-2-line w-6 h-6 shrink-0" />
+    <span class="i-mingcute-search-2-line h-6 w-6 shrink-0" />
   </button>
   <ClientOnly>
     <Teleport to="#page">
       <div
         v-if="search"
-        class="absolute inset-x-0 top-0 h-screen z-99 bg-zinc-900/95 flex flex-col gap-y-2 py-2 px-12"
+        class="absolute inset-x-0 top-0 z-99 h-screen flex flex-col gap-y-2 bg-zinc-900/95 px-12 py-2"
       >
         <UiTitle class="self-center">
           {{ $t('search') }}
@@ -33,14 +33,14 @@ watchEffect(() => {
           ref="searchinput"
           v-model="searchText"
           type="search"
-          class="w-full rounded p-2 bg-transparent border-2 border-zinc-400 text-zinc-100"
+          class="w-full border-2 border-zinc-400 rounded bg-transparent p-2 text-zinc-100"
         >
-        <div class="grid divide-y divide-dashed divide-zinc-600 self-start w-full px-2">
+        <div class="grid w-full self-start px-2 divide-y divide-zinc-600 divide-dashed">
           <NuxtLink
             v-for="result in searchResults"
             :key="result"
             :to="`/planets/${result}`"
-            class="text-zinc-100 hover:text-zinc-50 capitalize flex items-center gap-x-4 py-2"
+            class="flex items-center gap-x-4 py-2 text-zinc-100 capitalize hover:text-zinc-50"
           >
             <NuxtPicture
               :src="`/planets/${result}.jpg`"
@@ -54,10 +54,10 @@ watchEffect(() => {
           </NuxtLink>
         </div>
         <button
-          class="absolute top-4 right-4 flex"
+          class="absolute right-4 top-4 flex"
           @click="toggleSearch(false)"
         >
-          <span class="i-mingcute-close-circle-line w-10 h-10 shrink-0" />
+          <span class="i-mingcute-close-circle-line h-10 w-10 shrink-0" />
         </button>
       </div>
     </Teleport>

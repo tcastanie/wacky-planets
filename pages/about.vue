@@ -1,5 +1,5 @@
 <template>
-  <div class="px-8 mt-8 mb-16 grid gap-8">
+  <div class="grid mb-16 mt-8 gap-8 px-8">
     <ul class="list-disc list-inside">
       <p>Some images are from Unsplash:</p>
       <li>

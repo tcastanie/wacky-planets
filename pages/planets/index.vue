@@ -3,14 +3,14 @@ const planets = usePlanets()
 </script>
 
 <template>
-  <div class="px-8 mt-8 mb-16">
+  <div class="mb-16 mt-8 px-8">
     <UiTitle>{{ $t('planets') }}</UiTitle>
-    <div class="grid grid-cols-2 gap-8 mt-8">
+    <div class="grid grid-cols-2 mt-8 gap-8">
       <NuxtLink
         v-for="planet of planets"
         :key="planet"
         :to="`/planets/${planet.toLocaleLowerCase()}`"
-        class="grid gap-4 place-items-center text-center"
+        class="grid place-items-center gap-4 text-center"
       >
         <NuxtPicture
           :src="`/planets/${planet.toLocaleLowerCase()}.jpg`"
@@ -20,7 +20,7 @@ const planets = usePlanets()
           height="128"
           :img-attrs="{ class: 'rounded-xl' }"
         />
-        <div class="text-xl text-balance capitalize">
+        <div class="text-balance text-xl capitalize">
           {{ planet }}
         </div>
       </NuxtLink>

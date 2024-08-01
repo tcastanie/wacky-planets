@@ -35,33 +35,33 @@ const backgroundStyles = computed(() => {
 </script>
 
 <template>
-  <div class="mb-16 relative">
+  <div class="relative mb-16">
     <div
-      class="h-[576px] bg-no-repeat bg-center bg-cover sticky top-16 right-0 left-0"
+      class="sticky left-0 right-0 top-16 h-[576px] bg-cover bg-center bg-no-repeat"
       :style="backgroundStyles"
     />
-    <div class="band-ttb bg-zinc-900 text-center p-24 -my-16 z-1 relative">
+    <div class="band-ttb relative z-1 bg-zinc-900 p-24 text-center -my-16">
       <UiTitle>
         {{ capSlug }}
       </UiTitle>
     </div>
-    <div class="grid gap-8 px-8 text-lg text-center text-pretty z-1 relative bg-zinc-900">
+    <div class="relative z-1 grid gap-8 bg-zinc-900 px-8 text-center text-pretty text-lg">
       <p>{{ $t('planetDesc1', { slug: capSlug }) }}</p>
       <p>{{ $t('planetDesc2', { slug: capSlug }) }}</p>
     </div>
     <NuxtLink
       v-if="prev > 0"
       :to="`/planets/${planets[prev].toLocaleLowerCase()}`"
-      class="absolute z-2 top-[576px] left-0 flex"
+      class="absolute left-0 top-[576px] z-2 flex"
     >
-      <span class="i-mingcute-right-line w-8 h-8 shrink-0 rotate-180" />
+      <span class="i-mingcute-right-line h-8 w-8 shrink-0 rotate-180" />
     </NuxtLink>
     <NuxtLink
       v-if="next < planets.length"
       :to="`/planets/${planets[next].toLocaleLowerCase()}`"
-      class="absolute z-2 top-[576px] right-0 flex"
+      class="absolute right-0 top-[576px] z-2 flex"
     >
-      <span class="i-mingcute-right-line w-8 h-8 shrink-0" />
+      <span class="i-mingcute-right-line h-8 w-8 shrink-0" />
     </NuxtLink>
   </div>
 </template>
