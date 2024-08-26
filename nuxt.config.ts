@@ -17,6 +17,9 @@ export default defineNuxtConfig({
       stylistic: true,
     },
   },
+  i18n: {
+    vueI18n: './i18n.config.ts',
+  },
   image: {
     quality: 80,
     format: ['avif', 'webp'],
