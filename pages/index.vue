@@ -31,7 +31,7 @@ const backgroundStyles = computed(() => {
         class="border border-white rounded p-2 px-4"
         @click="setLocale('fr')"
       >
-        French
+        Français
       </NuxtLink>
     </div>
   </div>

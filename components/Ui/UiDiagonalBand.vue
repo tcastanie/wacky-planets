@@ -9,7 +9,7 @@ const { btt } = toRefs(props)
 
 <template>
   <div
-    class="bg-zinc-100 p-24 text-center text-zinc-900 -my-12"
+    class="bg-zinc-100 px-8 py-24 text-center text-zinc-900 -my-12"
     :class="{ 'band-btt': btt, 'band-ttb': !btt }"
   >
     <slot />

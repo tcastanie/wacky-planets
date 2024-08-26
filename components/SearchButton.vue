@@ -3,7 +3,7 @@ const { search, toggleSearch } = useSearch()
 const planets = usePlanets()
 const searchText = ref('')
 const searchResults = computed(() => {
-  return planets.value.filter(planet => planet.includes(searchText.value))
+  return planets.value.filter(planet => planet.includes(searchText.value.toLowerCase()))
 })
 
 // Focus the search input when the search is toggled
@@ -31,7 +31,7 @@ watchEffect(() => {
         </UiTitle>
         <input
           ref="searchinput"
-          v-model="searchText"
+          v-model.trim="searchText"
           type="search"
           class="w-full border-2 border-zinc-400 rounded bg-transparent p-2 text-zinc-100"
         >
@@ -41,6 +41,7 @@ watchEffect(() => {
             :key="result"
             :to="`/planets/${result}`"
             class="flex items-center gap-x-4 py-2 text-zinc-100 capitalize hover:text-zinc-50"
+            @click="toggleSearch()"
           >
             <NuxtPicture
               :src="`/planets/${result}.jpg`"
