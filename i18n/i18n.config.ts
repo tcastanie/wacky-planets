@@ -1,5 +1,5 @@
-import fr from './i18n/fr.json'
-import en from './i18n/en.json'
+import fr from './fr.json'
+import en from './en.json'
 
 export default defineI18nConfig(() => ({
   legacy: false,
